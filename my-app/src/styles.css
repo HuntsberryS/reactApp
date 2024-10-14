@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+ul li {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19.2px;
+  list-style: none;
+}
+
+footer {
+  margin-top: 300px;
+  text-align: center;
+}
+.container {
+  border: solid 1px rgb(135, 135, 135);
+  border-radius: 7px;
+  max-width: 600px;
+  padding: 16px;
+  justify-items: center;
+  margin-top: 20%;
+}
+.Search h1 {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 29px;
+  margin: 20px 0 0 0;
+}
+input {
+  margin: 20px;
+}
+.searchBar {
+  width: 60%;
+}
+.btn {
+  width: 15%;
+}
