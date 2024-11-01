@@ -9,7 +9,7 @@
 ul li {
   font-size: 16px;
   font-weight: 100;
-  line-height: 19.2px;
+  line-height: 19px;
   list-style: none;
 }
 
@@ -32,11 +32,13 @@ footer {
   margin: 20px 0 0 0;
 }
 input {
-  margin: 20px;
+  margin: 10px;
 }
 .searchBar {
   width: 60%;
+  display: inline-block;
 }
 .btn {
-  width: 15%;
+  width: 25%;
+  display: inline-block;
 }

@@ -12,8 +12,8 @@ export default function SearchEngine() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    let APIkey = "842b36d55cb28eba74a018029d56b04c";
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}&units=metric`;
+    let apiKey = `7036a98t226cf2o3c044afd3b96a58b7`;
+    let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
     axios.get(url).then(updateWeather);
   }
 
@@ -22,11 +22,11 @@ export default function SearchEngine() {
   }
 
   function updateWeather(response) {
-    setTemp(Math.round(response.data.main.temp));
-    setHumidity(Math.round(response.data.main.humidity));
-    setDescription(response.data.weather[0].description);
+    setTemp(Math.round(response.data.temperature.current));
+    setHumidity(Math.round(response.data.temperature.humidity));
+    setDescription(response.data.condition.description);
     setWind(Math.round(response.data.wind.speed));
-    setIcon(response.data.weather[0].icon);
+    setIcon(response.data.condition.icon);
   }
   if (temp) {
     return (
